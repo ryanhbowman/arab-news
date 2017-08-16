@@ -1,19 +1,20 @@
 .story-box
   margin-bottom: 16px
-  display: block
+  // display: block
   &:after
     content: ""
     display: table
     clear: both
 .story-box--main
   // margin-bottom: 1.5em
-  display: block
+  // display: block
   img
     display: block
     width: 100%
     margin-bottom: .5em
 
 .story-box--medium
+  display: block
   img
     display: block
     float: right
@@ -32,15 +33,24 @@
   img
     display: block
     width: 100%
-    margin-bottom: .5em
+    // margin-bottom: .5em
   .story-box--words
     text-align: center
-    padding: .5em
+    padding-bottom: 1em
+    min-height: 84px
+    position: relative
     h2
       color: white
       font-family: "Neue Regular"
-      font-size: 18px
-      line-height: 22px
+      font-size: 15px
+      line-height: 19px
+      margin: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      padding: 0 10%
+      width: 80%
+      left: 0
   .o-icon
     position: absolute
     top: .5em
@@ -48,6 +58,7 @@
     z-index: 1
 
 .story-box--tiny
+  display: block
   img
     display: block
     float: left
@@ -62,7 +73,7 @@
   margin: 0
 
 .story-group
-  padding: 0 $page-padding
+  // padding: 0 $page-padding
   &:first-of-type
     padding-top: $page-padding
   &.story-group--lined

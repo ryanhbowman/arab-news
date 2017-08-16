@@ -23,8 +23,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -0.25rem;
+  margin-left: -0.25rem;
 }
 
 .row.reverse {
@@ -497,7 +497,7 @@
   }
 }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 767px) {
   .container {
     width: 65rem;
   }
