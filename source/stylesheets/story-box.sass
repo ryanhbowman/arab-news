@@ -1,0 +1,70 @@
+.story-box
+  margin-bottom: 16px
+  display: block
+  &:after
+    content: ""
+    display: table
+    clear: both
+.story-box--main
+  // margin-bottom: 1.5em
+  display: block
+  img
+    display: block
+    width: 100%
+    margin-bottom: .5em
+
+.story-box--medium
+  img
+    display: block
+    float: right
+    margin-left: 1em
+    max-height: 90px
+
+.story-box--swipe
+  display: block
+  background: $black
+  margin: 0 .75em
+  position: relative
+  img
+    display: block
+    width: 100%
+    margin-bottom: .5em
+  .story-box--words
+    text-align: center
+    padding: .5em
+    h2
+      color: white
+      font-family: "Neue Regular"
+      font-size: 18px
+      line-height: 22px
+  .o-icon
+    position: absolute
+    top: .5em
+    left: .5em
+    z-index: 1
+
+.story-box--tiny
+  img
+    display: block
+    float: left
+    margin-right: 1em
+    max-height: 75px
+  h3
+    position: relative
+    top: -4px
+    min-height: 60px
+
+.story-box--info
+  margin: 0
+
+.story-group
+  padding: 0 $page-padding
+  &:first-of-type
+    padding-top: $page-padding
+  &.story-group--lined
+    .story-box
+      border-top: 1px $barelygray solid
+      margin-top: 1em
+      padding-top: 1em
+      &:first-of-type
+        margin-top: 0

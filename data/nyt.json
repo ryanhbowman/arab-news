@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2017 The New York Times Company. All Rights Reserved.",
+  "section": "home",
+  "last_updated": "2017-08-15T15:47:10-04:00",
+  "num_results": 29,
+  "results": [
+    {
+      "section": "U.S.",
+      "subsection": "",
+      "title": "Far Right Plans Its Next Moves With a New Energy",
+      "abstract": "Some white supremacists and right-wing extremists were making arrangements to appear at future marches, and others were planning to run for office.",
+      "url": "https://www.nytimes.com/2017/08/14/us/white-supremacists-right-wing-extremists-richard-spencer.html",
+      "byline": "By ALAN FEUER",
+      "short_url": "https://nyti.ms/2uWLdcT"
+    },
+    {
+      "section": "U.S.",
+      "subsection": "Politics",
+      "title": "Trump Shares, Then Deletes, Twitter Post of Train Hitting Cartoon Person Covered by CNN Logo",
+      "abstract": "Days after a driver rammed into a crowd in Charlottesville, Va., the president retweets a cartoon attacking the news network.",
+      "url": "https://www.nytimes.com/2017/08/15/us/politics/trump-shares-then-deletes-twitter-post-of-cnn-cartoon-being-hit-by-train.html",
+      "byline": "By EILEEN SULLIVAN and MAGGIE HABERMAN",
+      "short_url": "https://nyti.ms/2uXQOjb"
+    },
+
+    {
+      "section": "N.Y. / Region",
+      "subsection": "",
+      "title": "Black Democrats Rally Behind New York Senator Amid Racial Politicking",
+      "abstract": "Support for Andrea Stewart-Cousins, the New York Senate minority leader, comes as another racially charged remark from a charter school proponent has emerged.",
+      "url": "https://www.nytimes.com/2017/08/14/nyregion/andrea-stewart-cousins-daniel-loeb.html",
+      "byline": "By SHANE GOLDMACHER",
+      "item_type": "Article",
+      "short_url": "https://nyti.ms/2vyzFjE"
+    }
+  ]
+}
