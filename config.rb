@@ -6,6 +6,9 @@ activate :autoprefixer do |prefix|
 end
 activate :livereload
 
+configure :build do
+   set :http_prefix, "/arab-news"
+end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
