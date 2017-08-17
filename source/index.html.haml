@@ -16,56 +16,60 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %circle#Oval-2{:cx => "6.5", :cy => "6.5", :r => "6.5"}
               %path#Line-3{:d => "M11.5,11.5 L20.0146932,20.0146932"}
 %article.big-container
-  .row{:style=>"padding: 0 16px;"}
-    %article.col-xs-12.col-lg-9.col-md-12.row
-      -# MAIN STORY
-      %section.story-group.col-xs-12.col-md-7.col-lg-12
-        %a{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
-          %figure.col-lg-7.last-lg
-            %img{ :src => "images/big-image.jpg" }
-          .story-box--words.clearfix.col-lg-5
-            %h1
-              Deep Divisions Emerge in Trump Administration as North Korea Threatens War
-            .story-box--info.clearfix
-              %h5.f-l Politics
-              %date.f-r 34 minutes ago
-            %p
-              While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
-            .story-box--package
-              %h4 Mattis: North Korea Attack Could Lead to War
-              %h4 Where to find counter-protests to next weekend’s ‘Free Speech Rally’
-        -# %img{ :src => "images/leaderboard.jpg", :class=> "block-center" }
+  .row
+    %article.col-xs-12.col-lg-9
+      .row.row-padding
+        -# MAIN STORY
+        %section.story-group.col-xs-12.col-md-7.col-lg-12
+          %a{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+            %figure.col-lg-7.last-lg
+              %img{ :src => "images/big-image.jpg" }
+            .story-box--words.clearfix.col-lg-5
+              %h1
+                Deep Divisions Emerge in Trump Administration as North Korea Threatens War
+              .story-box--info.clearfix
+                %h5.f-l Politics
+                %date.f-r 34 minutes ago
+              %p
+                While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
+              .story-box--package
+                %h4 Mattis: North Korea Attack Could Lead to War
+                %h4 Where to find counter-protests to next weekend’s ‘Free Speech Rally’
+          -# %img{ :src => "images/leaderboard.jpg", :class=> "block-center" }
 
-      -# SMALLER STORIES SECTION
-      .row.space-group.col-xs-12.col-md-5.col-lg-12.space-md
-        %section.story-group--lined.col-lg-4
-          - data.main.small.each do |story|
-            %a{ :class => "story-box story-box--tiny", :href => "http://google.com", :title => story.title }
-              %figure
-                %img{:title => story.title, :src => story.image }
-              %h3= story.title
-              %date= story.date
+        -# SMALLER STORIES SECTION
+        .row.space-group.col-xs-12.col-md-5.col-lg-12.space-md
+          %section.story-group--lined.col-lg-4
+            - data.main.small.each do |story|
+              %a{ :class => "story-box story-box--tiny", :href => "http://google.com", :title => story.title }
+                %figure
+                  %img{:title => story.title, :src => story.image }
+                %h3= story.title
+                %date= story.date
 
 
-        %section.story-group.story-group--lined.col-lg-8
+          %section.story-group.story-group--lined.col-lg-8
 
-          .row
-            - data.main.medium.each do |story|
-              .col-lg-6
-                %a{ :class => "story-box story-box--medium", :href => "http://google.com", :title => story.title }
-                  %h2= story.title
-                  .clearfix
-                    %figure
-                      %img{:title => story.title, :src => story.image }
-                    %p= story.abstract
-                    %date= story.date
+            .row
+              - data.main.medium.each do |story|
+                .col-lg-6
+                  %a{ :class => "story-box story-box--medium", :href => "http://google.com", :title => story.title }
+                    %h2= story.title
+                    .clearfix
+                      %figure
+                        %img{:title => story.title, :src => story.image }
+                      %p= story.abstract
+                      %date= story.date
 
       -# OPINION SECTION
-      %section.story-group--swipe.col-xs-12
-        .row.swipe-slick
-        
+
+      %section.story-group--swipe
+        .row-padding
+          %h2.orange OPINION
+
+        .swipe-slick.container.row
           - data.main.opinion.each do |story|
-            %a{ :class => "story-box story-box--swipe", :href => "http://google.com", :title => story.title }
+            %a{ :class => "story-box story-box--swipe col-md-3", :href => "http://google.com", :title => story.title }
               .o-icon
                 %svg{:height => "28px", :version => "1.1", :viewbox => "0 0 28 28", :width => "28px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
                   %g#Page-1{:fill => "none", "fill-rule" => "evenodd", :stroke => "none", "stroke-width" => "1"}
