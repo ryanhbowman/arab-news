@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$media-md".
-        on line 508 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss
+        on line 509 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss
 
-503:     -ms-flex-order: 1;
-504:     order: 1;
-505:   }
-506: }
-507: 
-508: @media only screen and (min-width: $media-md) {
-509:   .container {
-510:     width: 65rem;
-511:   }
-512: 
-513:   .col-md,
+504:     -ms-flex-order: 1;
+505:     order: 1;
+506:   }
+507: }
+508: 
+509: @media only screen and (min-width: $media-md) {
+510:   .container {
+511:     width: 65rem;
+512:   }
+513: 
+514:   .col-md,
 
 Backtrace:
-/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss:508
+/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss:509
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:543:in `block in run_interp_no_strip'
@@ -132,4 +132,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$media-md\".\A         on line 508 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss\A \A 503:     -ms-flex-order: 1;\A 504:     order: 1;\A 505:   }\A 506: }\A 507: \A 508: @media only screen and (min-width: $media-md) {\A 509:   .container {\A 510:     width: 65rem;\A 511:   }\A 512: \A 513:   .col-md,"; }
+  content: "Error: Undefined variable: \"$media-md\".\A         on line 509 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/grid.scss\A \A 504:     -ms-flex-order: 1;\A 505:     order: 1;\A 506:   }\A 507: }\A 508: \A 509: @media only screen and (min-width: $media-md) {\A 510:   .container {\A 511:     width: 65rem;\A 512:   }\A 513: \A 514:   .col-md,"; }

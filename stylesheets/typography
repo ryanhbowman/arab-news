@@ -9,8 +9,8 @@ Error: Undefined variable: "$media-md".
 10:   // letter-spacing: -1px
 11: @media only screen and (min-width: $media-md)
 12:   h1
-13:     font-size: 32px
-14:     line-height: 36px
+13:     font-size: 36px
+14:     line-height: 40px
 15: h2
 16:   font-family: "Neue Heavy"
 
@@ -132,4 +132,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$media-md\".\A         on line 11 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass\A \A 6:   font-family: \"Neue Heavy\"\A 7:   font-size: 22px\A 8:   line-height: 26px\A 9:   margin-bottom: 16px\A 10:   // letter-spacing: -1px\A 11: @media only screen and (min-width: $media-md)\A 12:   h1\A 13:     font-size: 32px\A 14:     line-height: 36px\A 15: h2\A 16:   font-family: \"Neue Heavy\""; }
+  content: "Error: Undefined variable: \"$media-md\".\A         on line 11 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass\A \A 6:   font-family: \"Neue Heavy\"\A 7:   font-size: 22px\A 8:   line-height: 26px\A 9:   margin-bottom: 16px\A 10:   // letter-spacing: -1px\A 11: @media only screen and (min-width: $media-md)\A 12:   h1\A 13:     font-size: 36px\A 14:     line-height: 40px\A 15: h2\A 16:   font-family: \"Neue Heavy\""; }

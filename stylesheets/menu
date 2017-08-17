@@ -5,10 +5,11 @@ Error: Undefined variable: "$green".
 1: .menu
 2:   padding: 1em
 3:   background: $green
-4: .menu-actions
-5:   float: right
-6: .search
-7:   margin-top: 10px
+4:   position: fixed
+5:   top: 0
+6:   width: 100%
+7:   z-index: 2
+8: .menu-actions
 
 Backtrace:
 /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/menu.sass:3
@@ -135,4 +136,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 3 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/menu.sass\A \A 1: .menu\A 2:   padding: 1em\A 3:   background: $green\A 4: .menu-actions\A 5:   float: right\A 6: .search\A 7:   margin-top: 10px"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 3 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/menu.sass\A \A 1: .menu\A 2:   padding: 1em\A 3:   background: $green\A 4:   position: fixed\A 5:   top: 0\A 6:   width: 100%\A 7:   z-index: 2\A 8: .menu-actions"; }
