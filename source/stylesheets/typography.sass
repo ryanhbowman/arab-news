@@ -7,7 +7,10 @@ h1
   line-height: 26px
   margin-bottom: 16px
   letter-spacing: -1px
-
+@media only screen and (min-width: $media-md)
+  h1
+    font-size: 34px
+    line-height: 38px
 h2
   font-family: "Neue Heavy"
   font-size: 22px
@@ -20,6 +23,7 @@ h3
   font-size: 14px
   line-height: 18px
   letter-spacing: -.8px
+
 h5
   font-family: "Neue Medium"
   text-transform: uppercase
@@ -32,9 +36,10 @@ p
   font-family: "Neue Light"
   font-size: 14px
   line-height: 19px
-  margin: 0 0 0 1em
-  &:last-of-type
+  margin: 0 0 1em
+  &:last-child
     margin: 0
+
 
 a, a:link
   text-decoration: none

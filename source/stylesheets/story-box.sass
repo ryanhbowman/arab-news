@@ -20,10 +20,15 @@
     float: right
     margin-left: 1em
     max-height: 90px
+@media only screen and (min-width: $media-md)
+  .story-box--main p
+    font-family: "Neue Light"
+    font-size: 18px
+    line-height: 24px
 
 .story-box--swipe
   display: block
-  background: $black
+  // background: $black
   margin: 0 .75em
   position: relative
   opacity: .6
@@ -39,6 +44,7 @@
     padding-bottom: 1em
     min-height: 84px
     position: relative
+    background: #000
     h2
       color: white
       font-family: "Neue Regular"
@@ -56,9 +62,20 @@
     top: .5em
     left: .5em
     z-index: 1
+@media only screen and (min-width: $media-md)
+  .story-box--swipe
+    margin: 0
+    opacity: 1
 
 .story-box--tiny
   display: block
+  margin: 0
+  padding: 1em
+  transition: .3s all
+  &.story-box
+    margin: 0
+  &:hover
+    background: $essentiallynotgray
   img
     display: block
     float: left
@@ -73,13 +90,40 @@
   margin: 0
 
 .story-group
-  // padding: 0 $page-padding
   &:first-of-type
     padding-top: $page-padding
-  &.story-group--lined
-    .story-box
-      border-top: 1px $barelygray solid
-      margin-top: 1em
-      padding-top: 1em
-      &:first-of-type
-        margin-top: 0
+@media only screen and (min-width: $media-md)
+  .story-group
+    &:first-of-type
+      padding-top: $page-padding*2
+  .story-group--lined .story-box:nth-of-type(2)
+    display: none
+.story-group--lined
+  .story-box
+    border-top: 1px $barelygray solid
+    // margin-top: 1em
+    // padding-top: 1em
+    &:first-of-type
+      margin-top: 0
+
+.story-box--package
+  h3
+    margin-bottom: 1em
+    &::before
+      background: $green
+      height: 16px
+      width: 16px
+      border-radius: 50%
+      display: inline-block
+      position: relative
+      top: 2px
+      margin-right: .5em
+      content: ''
+.underline--magical
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
+  background-repeat: no-repeat
+  background-size: 100% 0.2em
+  background-position: 0 88%
+  transition: background-size 0.25s ease-in
+  &:hover
+    background-size: 100% 88%

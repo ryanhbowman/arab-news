@@ -1,3 +1,7 @@
+.big-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .container-fluid,
 .container {
   margin-right: auto;
@@ -23,8 +27,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.25rem;
-  margin-left: -0.25rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 
 .row.reverse {
@@ -497,7 +501,7 @@
   }
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: $media-md) {
   .container {
     width: 65rem;
   }
@@ -532,8 +536,8 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .col-md {
