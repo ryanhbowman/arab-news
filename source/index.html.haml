@@ -16,9 +16,10 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %circle#Oval-2{:cx => "6.5", :cy => "6.5", :r => "6.5"}
               %path#Line-3{:d => "M11.5,11.5 L20.0146932,20.0146932"}
 %article.big-container
-  .row{:style=>"padding: 0 24px;"}
-    %article.col-lg-9.col-md-12.row
-      %section.story-group.col-md-7.col-lg-12
+  .row{:style=>"padding: 0 16px;"}
+    %article.col-xs-12.col-lg-9.col-md-12.row
+      -# MAIN STORY
+      %section.story-group.col-xs-12.col-md-7.col-lg-12
         %a{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
           %figure.col-lg-7.last-lg
             %img{ :src => "images/big-image.jpg" }
@@ -33,9 +34,10 @@ title: Arab News | World-class opinion, breaking news, regional expertise
             .story-box--package
               %h4 Mattis: North Korea Attack Could Lead to War
               %h4 Where to find counter-protests to next weekend’s ‘Free Speech Rally’
-        %img{ :src => "images/leaderboard.jpg", :class=> "block-center" }
+        -# %img{ :src => "images/leaderboard.jpg", :class=> "block-center" }
 
-      .row.space-group.col-md-5.col-lg-12.space-md
+      -# SMALLER STORIES SECTION
+      .row.space-group.col-xs-12.col-md-5.col-lg-12.space-md
         %section.story-group--lined.col-lg-4
           - data.main.small.each do |story|
             %a{ :class => "story-box story-box--tiny", :href => "http://google.com", :title => story.title }
@@ -58,10 +60,12 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                     %p= story.abstract
                     %date= story.date
 
-      %section.story-group--swipe
+      -# OPINION SECTION
+      %section.story-group--swipe.col-xs-12
         .row.swipe-slick
+        
           - data.main.opinion.each do |story|
-            %a{ :class => "story-box story-box--swipe col-md-3", :href => "http://google.com", :title => story.title }
+            %a{ :class => "story-box story-box--swipe", :href => "http://google.com", :title => story.title }
               .o-icon
                 %svg{:height => "28px", :version => "1.1", :viewbox => "0 0 28 28", :width => "28px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
                   %g#Page-1{:fill => "none", "fill-rule" => "evenodd", :stroke => "none", "stroke-width" => "1"}
@@ -74,6 +78,8 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               .story-box--words
                 -# %h5.orange Opinion
                 %h2= story.title
+
+    -# THE FEED
     %aside.the-feed.col-lg-3.story-group
       %h2.green.ta-center THE FEED
       %section.story-group--lined
@@ -83,7 +89,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %img{:title => story.title, :src => story.image }
             %h3= story.title
             %date= story.date
-      %img{:src => "images/mpu.jpg", :class=> "block-center"  }
+      -# %img{:src => "images/mpu.jpg", :class=> "block-center"  }
   %nav.bottom-menu
     %ul
       %li.icon--selected
