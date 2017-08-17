@@ -12,8 +12,17 @@ $( document ).ready(function() {
           settings: "unslick"
         },
         {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            arrows:false,
+            dots: true,
+          }
+        },
+        {
           breakpoint: 766,
           settings: {
+            slidesToShow: 1,
             arrows:false,
             centerMode: true,
             centerPadding: '50px',

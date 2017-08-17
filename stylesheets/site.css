@@ -429,6 +429,9 @@ figure {
   max-width: 1500px;
   margin: 0 auto; }
 
+.row-padding {
+  padding: 0 16px; }
+
 .container-fluid,
 .container {
   margin-right: auto;
@@ -1416,20 +1419,23 @@ date {
       left: 0; }
   .story-box--swipe .o-icon {
     position: absolute;
-    bottom: 0.5em;
-    left: 1.5em;
+    top: 15px;
+    left: 20px;
     z-index: 1;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
 
 @media only screen and (min-width: 767px) {
   .story-box--swipe {
     margin: 0;
-    opacity: 1; } }
+    opacity: 1; }
+
+  .story-box--tiny {
+    padding: 1em; } }
 .story-box--tiny {
   display: block;
   margin: 0;
-  padding: 1em;
+  padding-bottom: 1em;
   -webkit-transition: 0.3s all;
   transition: 0.3s all; }
   .story-box--tiny.story-box {
