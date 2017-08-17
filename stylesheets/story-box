@@ -1,35 +1,28 @@
 /*
-Error: Undefined variable: "$black".
-        on line 26 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass
+Error: Undefined variable: "$media-md".
+        on line 23 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass
 
+18:   img
+19:     display: block
+20:     float: right
 21:     margin-left: 1em
 22:     max-height: 90px
-23: 
-24: .story-box--swipe
-25:   display: block
-26:   background: $black
-27:   margin: 0 .75em
-28:   position: relative
-29:   opacity: .6
-30:   transition: all .3s
-31:   &.slick-current
+23: @media only screen and (min-width: $media-md)
+24:   .story-box--main p
+25:     font-family: "Neue Light"
+26:     font-size: 18px
+27:     line-height: 24px
+28: 
 
 Backtrace:
-/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass:26
+/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass:23
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:543:in `block in run_interp_no_strip'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:541:in `map'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:541:in `run_interp_no_strip'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:548:in `run_interp'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:513:in `visit_media'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
@@ -139,4 +132,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 26 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass\A \A 21:     margin-left: 1em\A 22:     max-height: 90px\A 23: \A 24: .story-box--swipe\A 25:   display: block\A 26:   background: $black\A 27:   margin: 0 .75em\A 28:   position: relative\A 29:   opacity: .6\A 30:   transition: all .3s\A 31:   &.slick-current"; }
+  content: "Error: Undefined variable: \"$media-md\".\A         on line 23 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/story-box.sass\A \A 18:   img\A 19:     display: block\A 20:     float: right\A 21:     margin-left: 1em\A 22:     max-height: 90px\A 23: @media only screen and (min-width: $media-md)\A 24:   .story-box--main p\A 25:     font-family: \"Neue Light\"\A 26:     font-size: 18px\A 27:     line-height: 24px\A 28: "; }
