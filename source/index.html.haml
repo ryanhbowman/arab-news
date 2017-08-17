@@ -67,7 +67,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
         .row-padding
           %h2.orange OPINION
 
-        .swipe-slick.container.row
+        .swipe-slick.row
           - data.main.opinion.each do |story|
             %a{ :class => "story-box story-box--swipe col-md-3", :href => "http://google.com", :title => story.title }
               .o-icon
@@ -93,7 +93,14 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %img{:title => story.title, :src => story.image }
             %h3= story.title
             %date= story.date
-      -# %img{:src => "images/mpu.jpg", :class=> "block-center"  }
+      %img{:src => "images/mpu.jpg", :class=> "block-center"  }
+      %section.story-group--lined
+        - data.main.feed.each do |story|
+          %a{ :class => "story-box story-box--tiny", :href => "http://google.com", :title => story.title }
+            %figure
+              %img{:title => story.title, :src => story.image }
+            %h3= story.title
+            %date= story.date
   %nav.bottom-menu
     %ul
       %li.icon--selected
