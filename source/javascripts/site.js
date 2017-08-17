@@ -26,7 +26,7 @@ $( document ).ready(function() {
             arrows:false,
             centerMode: true,
             centerPadding: '50px',
-            dots: true,
+            // dots: true,
           }
         }
     // You can unslick at a given breakpoint now by adding:
