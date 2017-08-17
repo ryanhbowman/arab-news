@@ -17,25 +17,26 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %path#Line-3{:d => "M11.5,11.5 L20.0146932,20.0146932"}
 %article.big-container
   .row{:style=>"padding: 0 24px;"}
-    %article.col-md-9.col-xs-12
-      %section.story-group
+    %article.col-lg-9.col-md-12.row
+      %section.story-group.col-md-7.col-lg-12
         %a{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
-          %figure.col-md-7
+          %figure.col-lg-7.last-lg
             %img{ :src => "images/big-image.jpg" }
-          .story-box--words.clearfix.col-md-5.first-md
+          .story-box--words.clearfix.col-lg-5
             %h1
               Deep Divisions Emerge in Trump Administration as North Korea Threatens War
             .story-box--info.clearfix
               %h5.f-l Politics
               %date.f-r 34 minutes ago
             %p
-              While President Trump and Kim Jong-un of North Korea spoke in war terms, officials told Americans they could “sleep well” and urged North Korea to “stand down.”
+              While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
             .story-box--package
-              %h3 Mattis: North Korea Attack Could Lead to War
-              %h3 Where to find counter-protests to next weekend’s ‘Free Speech Rally’
+              %h4 Mattis: North Korea Attack Could Lead to War
+              %h4 Where to find counter-protests to next weekend’s ‘Free Speech Rally’
+        %img{ :src => "images/leaderboard.jpg", :class=> "block-center" }
 
-      .row.space-group
-        %section.story-group--lined.col-md-4
+      .row.space-group.col-md-5.col-lg-12.space-md
+        %section.story-group--lined.col-lg-4
           - data.main.small.each do |story|
             %a{ :class => "story-box story-box--tiny", :href => "http://google.com", :title => story.title }
               %figure
@@ -43,11 +44,12 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %h3= story.title
               %date= story.date
 
-        %section.story-group.story-group--lined.col-md-8
+
+        %section.story-group.story-group--lined.col-lg-8
 
           .row
             - data.main.medium.each do |story|
-              .col-md-6
+              .col-lg-6
                 %a{ :class => "story-box story-box--medium", :href => "http://google.com", :title => story.title }
                   %h2= story.title
                   .clearfix
@@ -72,7 +74,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               .story-box--words
                 -# %h5.orange Opinion
                 %h2= story.title
-    %aside.the-feed.col-md-3.story-group
+    %aside.the-feed.col-lg-3.story-group
       %h2.green.ta-center THE FEED
       %section.story-group--lined
         - data.main.feed.each do |story|
@@ -81,7 +83,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
               %img{:title => story.title, :src => story.image }
             %h3= story.title
             %date= story.date
-
+      %img{:src => "images/mpu.jpg", :class=> "block-center"  }
   %nav.bottom-menu
     %ul
       %li.icon--selected

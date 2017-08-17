@@ -23,9 +23,18 @@
   margin-bottom: 1.5em
 .circle
   background: $green
-  height: 16px
-  width: 16px
+  height: 14px
+  width: 14px
   border-radius: 50%
   display: inline-block
   position: relative
-  top: 2px
+  top: 4px
+@media only screen and (min-width: $media-md)
+  .space-md
+    padding-top: 48px
+@media only screen and (min-width: $media-lg)
+  .space-md
+    padding-top: 24px
+.block-center
+  display: block
+  margin: 0 auto

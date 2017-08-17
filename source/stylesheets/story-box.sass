@@ -6,7 +6,7 @@
     display: table
     clear: both
 .story-box--main
-  // margin-bottom: 1.5em
+  margin-bottom: 24px
   // display: block
   img
     display: block
@@ -59,9 +59,10 @@
       left: 0
   .o-icon
     position: absolute
-    top: .5em
-    left: .5em
+    bottom: 0.5em
+    left: 1.5em
     z-index: 1
+    transform: scale(.8)
 @media only screen and (min-width: $media-md)
   .story-box--swipe
     margin: 0
@@ -102,28 +103,29 @@
   .story-box
     border-top: 1px $barelygray solid
     // margin-top: 1em
-    // padding-top: 1em
+    padding-top: 1em
     &:first-of-type
       margin-top: 0
 
 .story-box--package
-  h3
-    margin-bottom: 1em
+  h4
+    margin-bottom: .5em
     &::before
       background: $green
-      height: 16px
-      width: 16px
+      height: 14px
+      width: 14px
       border-radius: 50%
       display: inline-block
       position: relative
       top: 2px
-      margin-right: .5em
+      margin-right: .25em
       content: ''
-.underline--magical
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
-  background-repeat: no-repeat
-  background-size: 100% 0.2em
-  background-position: 0 88%
-  transition: background-size 0.25s ease-in
-  &:hover
-    background-size: 100% 88%
+//
+// .underline--magical
+//   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
+//   background-repeat: no-repeat
+//   background-size: 100% 0.2em
+//   background-position: 0 88%
+//   transition: background-size 0.25s ease-in
+//   &:hover
+//     background-size: 100% 88%
