@@ -18,7 +18,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                 %h1
                   Deep Divisions Emerge in Trump Administration as North Korea Threatens War
                 .story-box--info.clearfix
-                  %h5.f-l Politics
+                  %h5.f-l.purple World
                   %date.f-r 34 minutes ago
                 %p
                   While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
@@ -57,7 +57,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
 
       -# OPINION SECTION
 
-      %section.story-group--swipe
+      %section.story-group--swipe.space-group-big
         .row-padding
           %h2.orange OPINION
 
@@ -75,8 +75,65 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                 %img{ :src => story.image, :style => "position: relative" }
                 .gradient
               .story-box--words
-                -# %h5.orange Opinion
+                %h5.orange= story.person
                 %h2= story.title
+
+      -# Business section
+      %section.story-group.row
+        .row-padding.col-md-3.ta-right
+          %h2.blue BUSINESS
+        .col-md-9.story-group.story-group--list
+          %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+            %figure.col-lg-7
+              %a{:href => "/"}
+                %img{ :src => "images/big-image.jpg" }
+
+            .story-box--words.clearfix.col-lg-5
+              %a{:href => "/", :class => "space-group", :style => "display:block;"}
+                %h2 Deep Divisions Emerge in Trump Administration as North Korea Threatens War
+                %p While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
+                %date 4 hours ago
+
+
+          - data.main.business.each do |story|
+            %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+              %figure.col-md-4
+                %a{:href => "/"}
+                  %img{:title => story.title, :src => story.image }
+              .story-box--words.col-md-8
+                %a{:href => "/", :class => "space-group", :style => "display:block;"}
+                  %h2= story.title
+                  %p= story.abstract
+                  %date= story.date
+
+        -# World section
+        %section.story-group.row
+          .row-padding.col-md-3.ta-right
+            %h2.purple WORLD
+          .col-md-9.story-group.story-group--list
+            %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+              %figure.col-lg-7
+                %a{:href => "/"}
+                  %img{ :src => "images/big-image.jpg" }
+
+              .story-box--words.clearfix.col-lg-5
+                %a{:href => "/", :class => "space-group", :style => "display:block;"}
+                  %h2 Deep Divisions Emerge in Trump Administration as North Korea Threatens War
+                  %p While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
+                  %date 4 hours ago
+
+
+            - data.main.business.each do |story|
+              %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+                %figure.col-md-4
+                  %a{:href => "/"}
+                    %img{:title => story.title, :src => story.image }
+                .story-box--words.col-md-8
+                  %a{:href => "/", :class => "space-group", :style => "display:block;"}
+                    %h2= story.title
+                    %p= story.abstract
+                    %date= story.date
+
 
     -# THE FEED
     %aside.the-feed

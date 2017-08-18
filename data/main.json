@@ -33,17 +33,17 @@
       "date": "2 hours ago"
     }
   ],
-  "opinion": [
+  "business": [
     {
       "title": "Walmart’s C.E.O. McMillon Joins Group to Rebuke Trump Over Charlottesville",
       "abstract": "Doug McMillon, Walmart’s chief executive, said the president “missed a critical opportunity to help bring our country together.”",
-      "image": "images/vert-image3.jpg" ,
+      "image": "images/thumbnail.jpg" ,
       "date": "23 minutes ago"
     },
     {
       "title": "Trump Shares, Then Deletes, Post of Train Hitting Cartoon Covered by CNN Logo",
       "abstract": "Days after a driver rammed into a crowd in Charlottesville, Va., the president retweets a cartoon attacking the news network.",
-        "image": "images/vert-image.jpg" ,
+      "image":   "https://static01.nyt.com/images/2017/08/16/us/16dc-trump-tweet/16dc-trump-tweet-thumbLarge-v3.png",
       "date": "2 hours ago"
     },
     {
@@ -51,12 +51,36 @@
       "abstract": "Support for Andrea Stewart-Cousins, the New York Senate minority leader, comes as another racially charged remark from a charter school proponent has emerged.",
       "image": "images/vert-image5.jpg" ,
       "date": "Yesterday"
+    }
+  ],
+  "opinion": [
+    {
+      "title": "Walmart’s C.E.O. McMillon Joins Group to Rebuke Trump Over Charlottesville",
+      "abstract": "Doug McMillon, Walmart’s chief executive, said the president “missed a critical opportunity to help bring our country together.”",
+      "image": "images/vert-image3.jpg" ,
+      "date": "23 minutes ago",
+      "person": "Zaid M. Belbagi"
+    },
+    {
+      "title": "Trump Shares, Then Deletes, Post of Train Hitting Cartoon Covered by CNN Logo",
+      "abstract": "Days after a driver rammed into a crowd in Charlottesville, Va., the president retweets a cartoon attacking the news network.",
+        "image": "images/vert-image.jpg" ,
+      "date": "2 hours ago",
+       "person": "Carl Bildt"
+    },
+    {
+      "title": "Black Democrats Rally Behind New York Senator Amid Racial Politicking",
+      "abstract": "Support for Andrea Stewart-Cousins, the New York Senate minority leader, comes as another racially charged remark from a charter school proponent has emerged.",
+      "image": "images/vert-image5.jpg" ,
+      "date": "Yesterday",
+      "person": "James Q. Whitman"
     },
     {
       "title": "Trump Shares, Then Deletes, Post of Train Hitting Cartoon Covered by CNN Logo",
       "abstract": "Days after a driver rammed into a crowd in Charlottesville, Va., the president retweets a cartoon attacking the news network.",
         "image": "images/vert-image4.jpg" ,
-      "date": "2 hours ago"
+      "date": "2 hours ago",
+      "person": "Frank Kane"
     }
   ],
   "feed": [
