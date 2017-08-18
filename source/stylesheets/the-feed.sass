@@ -17,12 +17,16 @@
   max-width: 325px
   z-index: 1
   text-align: center
-
 .the-feed--ad-container
-  background: $essentiallynotgray
-  padding: .5em
-  border-top: 1px solid $barelygray
-  margin: 0 auto
+  display: none
+
+@media only screen and (min-width: $media-md)
+  .the-feed--ad-container
+    display: block
+    background: $essentiallynotgray
+    padding: 0 0 .5em
+    border-top: 1px solid $barelygray
+    margin: 0 auto
 
 .story-group--feed
   margin-bottom: 320px
