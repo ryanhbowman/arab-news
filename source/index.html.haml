@@ -79,7 +79,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                 %h2= story.title
 
       -# Business section
-      %section.story-group.row
+      %section.story-group.row.space-group-big.clearfix
         .row-padding.col-md-3.ta-right
           %h2.blue BUSINESS
         .col-md-9.story-group.story-group--list
@@ -105,6 +105,11 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                   %h2= story.title
                   %p= story.abstract
                   %date= story.date
+
+        %section.space-group-big.container
+          .the-feed--ad-container.ta-center
+            .ad ADVERTISEMENT
+            %img{:src => "images/leaderboard.jpg"  }
 
         -# World section
         %section.story-group.row
