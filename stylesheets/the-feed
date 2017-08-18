@@ -11,8 +11,8 @@ Error: Undefined variable: "$barelygray".
 9:   padding: 14px 0 0
 10:   top: 79px
 11:   max-width: 325px
-12: .the-feed--ad
-13:   position: fixed
+12:   transition: .4s ease-in all
+13: .the-feed--ad
 
 Backtrace:
 /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/the-feed.sass:8
@@ -143,4 +143,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$barelygray\".\A         on line 8 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/the-feed.sass\A \A 3:   bottom: 0\A 4:   position: fixed\A 5:   overflow-y: scroll\A 6:   overflow-x: hidden\A 7:   background: white\A 8:   border-left: 1px solid $barelygray\A 9:   padding: 14px 0 0\A 10:   top: 79px\A 11:   max-width: 325px\A 12: .the-feed--ad\A 13:   position: fixed"; }
+  content: "Error: Undefined variable: \"$barelygray\".\A         on line 8 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/the-feed.sass\A \A 3:   bottom: 0\A 4:   position: fixed\A 5:   overflow-y: scroll\A 6:   overflow-x: hidden\A 7:   background: white\A 8:   border-left: 1px solid $barelygray\A 9:   padding: 14px 0 0\A 10:   top: 79px\A 11:   max-width: 325px\A 12:   transition: .4s ease-in all\A 13: .the-feed--ad"; }

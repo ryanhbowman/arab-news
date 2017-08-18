@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$media-md".
-        on line 11 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass
+        on line 14 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass
 
-6:   font-family: "Neue Heavy"
-7:   font-size: 22px
-8:   line-height: 26px
-9:   margin-bottom: 16px
-10:   // letter-spacing: -1px
-11: @media only screen and (min-width: $media-md)
-12:   h1
-13:     font-size: 36px
-14:     line-height: 40px
-15: h2
-16:   font-family: "Neue Heavy"
+9:   font-family: "Neue Heavy"
+10:   font-size: 22px
+11:   line-height: 26px
+12:   margin-bottom: 16px
+13:   // letter-spacing: -1px
+14: @media only screen and (min-width: $media-md)
+15:   h1
+16:     font-size: 36px
+17:     line-height: 40px
+18: h2
+19:   font-family: "Neue Heavy"
 
 Backtrace:
-/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass:11
+/Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass:14
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
 /usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:543:in `block in run_interp_no_strip'
@@ -132,4 +132,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$media-md\".\A         on line 11 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass\A \A 6:   font-family: \"Neue Heavy\"\A 7:   font-size: 22px\A 8:   line-height: 26px\A 9:   margin-bottom: 16px\A 10:   // letter-spacing: -1px\A 11: @media only screen and (min-width: $media-md)\A 12:   h1\A 13:     font-size: 36px\A 14:     line-height: 40px\A 15: h2\A 16:   font-family: \"Neue Heavy\""; }
+  content: "Error: Undefined variable: \"$media-md\".\A         on line 14 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/typography.sass\A \A 9:   font-family: \"Neue Heavy\"\A 10:   font-size: 22px\A 11:   line-height: 26px\A 12:   margin-bottom: 16px\A 13:   // letter-spacing: -1px\A 14: @media only screen and (min-width: $media-md)\A 15:   h1\A 16:     font-size: 36px\A 17:     line-height: 40px\A 18: h2\A 19:   font-family: \"Neue Heavy\""; }
