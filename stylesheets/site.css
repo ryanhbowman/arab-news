@@ -426,7 +426,7 @@ figure {
   src: url(" ../fonts/6c692eb5-038f-453c-acf3-ac23b220b88f.eot?#iefix");
   src: url(" ../fonts/6c692eb5-038f-453c-acf3-ac23b220b88f.eot?#iefix") format("eot"), url(" ../fonts/f01b7f8c-22f9-4b50-9ad7-d3a17cf65b06.woff2") format("woff2"), url(" ../fonts/69806caf-7c00-4742-8f54-584ad7d5ad6b.woff") format("woff"), url(" ../fonts/6acd8ee3-d80a-44a0-a99e-11a7ed1d4cc4.ttf") format("truetype"), url(" ../fonts/494a9340-2b09-4558-b1d6-6c5966ead957.svg#494a9340-2b09-4558-b1d6-6c5966ead957") format("svg"); }
 .big-container {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 79px auto; }
 
 .row-padding {
@@ -1266,8 +1266,17 @@ figure {
 .green {
   color: #00882D; }
 
+.blue {
+  color: #2F90E9; }
+
+.purple {
+  color: #9013FE; }
+
 .space-group {
   margin-bottom: 1.5em; }
+
+.space-group-big {
+  margin-bottom: 3em; }
 
 .circle {
   background: #00882D;
@@ -1349,7 +1358,7 @@ h5 {
   color: #4A90E2;
   letter-spacing: 0.5px;
   font-size: 11px;
-  margin-bottom: 1.5em; }
+  margin-bottom: 0.5em; }
 
 p {
   font-family: "Neue Light";
@@ -1462,8 +1471,8 @@ date {
     width: 100%; }
   .story-box--swipe .story-box--words {
     text-align: center;
-    padding-bottom: 1em;
-    min-height: 84px;
+    padding: 1em 0;
+    min-height: 90px;
     position: relative;
     background: #000;
     -webkit-transition: 0.3s all;
@@ -1476,10 +1485,6 @@ date {
       font-size: 15px;
       line-height: 19px;
       margin: 0;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
       padding: 0 10%;
       width: 80%;
       left: 0; }
@@ -1527,6 +1532,20 @@ date {
     top: -4px;
     min-height: 60px; }
 
+.story-group--list .story-box--words {
+  padding: 0 24px; }
+.story-group--list .story-box--main figure {
+  display: none; }
+.story-group--list .story-box--main:first-of-type figure {
+  display: block; }
+
+@media only screen and (min-width: 767px) {
+  .story-group--list .story-box--words {
+    padding: 0; }
+  .story-group--list .story-box--main .story-box--words {
+    padding: 0 0 0 20px; }
+  .story-group--list .story-box--main figure {
+    display: block; } }
 .story-box--info {
   margin: 0; }
 
