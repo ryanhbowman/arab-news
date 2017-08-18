@@ -5,7 +5,34 @@
   top: 0
   width: 100%
   z-index: 2
+  box-sizing: border-box
 .menu-actions
   float: right
 .search
   margin-top: 10px
+  float: right
+
+.main-menu
+  display: none
+@media only screen and (min-width: $media-md)
+  .main-menu
+    display: block
+    margin: 0
+    padding: 0
+    list-style: none
+    float: left
+    margin-right: 1em
+    li
+      float: left
+      margin-right: 2em
+      text-transform: uppercase
+      color: white
+      font-family: "Neue Light"
+      font-size: 14px
+      letter-spacing: 1px
+      line-height: 42px
+      a:hover
+        border-bottom: 3px rgba(255,255,255,.7) solid
+  @media only screen and (min-width: $media-lg)
+    .main-menu li
+      margin-right: 3em
