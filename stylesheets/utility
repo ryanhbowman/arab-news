@@ -12,7 +12,7 @@ Error: Undefined variable: "$orange".
 21:   color: $green
 22: .blue
 23:   color: $blue
-24: .purple
+24: .red
 
 Backtrace:
 /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/utility.sass:19
@@ -141,4 +141,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 19 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/utility.sass\A \A 14: .clearfix:after\A 15:   content: \"\"\A 16:   display: table\A 17:   clear: both\A 18: .orange\A 19:   color: $orange\A 20: .green\A 21:   color: $green\A 22: .blue\A 23:   color: $blue\A 24: .purple"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 19 of /Users/ryanbowman/Dropbox/Sites/arab-news/source/stylesheets/utility.sass\A \A 14: .clearfix:after\A 15:   content: \"\"\A 16:   display: table\A 17:   clear: both\A 18: .orange\A 19:   color: $orange\A 20: .green\A 21:   color: $green\A 22: .blue\A 23:   color: $blue\A 24: .red"; }
