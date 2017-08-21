@@ -6,9 +6,9 @@ activate :autoprefixer do |prefix|
 end
 activate :livereload
 
-configure :build do
-   set :http_prefix, "/arab-news"
-end
+# configure :build do
+#    set :http_prefix, "/arab-news"
+# end
 
 activate :deploy do |deploy|
   deploy.build_before = true
@@ -56,7 +56,8 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  # activate :minify_html
+end
