@@ -9,7 +9,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
       .row.row-padding
         -# MAIN STORY
         %section.story-group.col-xs-12.col-md-7.col-lg-12
-          %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+          %div{ :class => "story-box story-box--main row", :href => "#", :title => "Arab News" }
             %figure.col-lg-7.last-lg
               %a{:href => "/"}
                 %img{ :src => "images/big-image.jpg" }
@@ -18,7 +18,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
                 %h1
                   Deep Divisions Emerge in Trump Administration as North Korea Threatens War
                 .story-box--info.clearfix
-                  %h5.f-l.purple World
+                  %h5.f-l.red World
                   %date.f-r 34 minutes ago
                 %p
                   While President Trump and Kim Jong-un spoke in war terms, officials told Americans and the world they could “sleep well”
@@ -83,7 +83,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
         .row-padding.col-md-3.ta-right
           %h2.blue BUSINESS
         .col-md-9.story-group.story-group--list
-          %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+          %div{ :class => "story-box story-box--main row section--main", :href => "#", :title => "Arab News" }
             %figure.col-lg-7
               %a{:href => "/"}
                 %img{ :src => "images/big-image.jpg" }
@@ -96,7 +96,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
 
 
           - data.main.business.each do |story|
-            %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+            %div{ :class => "story-box story-box--main row section--main", :href => "#", :title => "Arab News" }
               %figure.col-md-4
                 %a{:href => "/"}
                   %img{:title => story.title, :src => story.image }
@@ -114,9 +114,9 @@ title: Arab News | World-class opinion, breaking news, regional expertise
         -# World section
         %section.story-group.row
           .row-padding.col-md-3.ta-right
-            %h2.purple WORLD
+            %h2.red WORLD
           .col-md-9.story-group.story-group--list
-            %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+            %div{ :class => "story-box story-box--main row", :href => "#", :title => "Arab News" }
               %figure.col-lg-7
                 %a{:href => "/"}
                   %img{ :src => "images/big-image.jpg" }
@@ -129,7 +129,7 @@ title: Arab News | World-class opinion, breaking news, regional expertise
 
 
             - data.main.business.each do |story|
-              %div{ :class => "story-box story-box--main row", :href => "http://google.com", :title => "Google the Team" }
+              %div{ :class => "story-box story-box--main row", :href => "#", :title => "Arab News" }
                 %figure.col-md-4
                   %a{:href => "/"}
                     %img{:title => story.title, :src => story.image }
